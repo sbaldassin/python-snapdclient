@@ -1,0 +1,3 @@
+nose2
+unittest2
+requests_unixsocket
