@@ -7,5 +7,5 @@ setup(name='snapdclient',
       author='Santiago Baldassin',
       author_email='santiago.baldassin@canonical.com',
       license='GPLv3',
-      packages=['snapdclient, snapdclient.v2, snapdclient.v2.snaps'],
+      packages=['snapdclient'],
       zip_safe=False)

@@ -20,3 +20,6 @@ class SnapsTestCase(unittest2.TestCase):
     def test_find_snap_by_name_return_none_if_not_found(self):
         snap = self.snap.find_by_name('fake_snap')
         self.assertIsNone(snap)
+
+    def test_refresh_snap(self):
+        self.snap.install()
