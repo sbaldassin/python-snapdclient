@@ -1,6 +1,5 @@
 from snapdclient.base import Manager
 
-
 class Snap(Manager):
 
     def __init__(self):
@@ -8,6 +7,6 @@ class Snap(Manager):
         self.version = 'v2'
         super().__init__(self.url, self.version)
 
-    def install(self):
-        message = {"action": "refresh", "snaps": ["ubuntu-calculator-app"]}
-        self.client.session.post(self.url, json=message, auth=("balda", "zoelarayani12@"))
+    def install(self, snap_name):
+        message = {"action": "install", "snaps": [snap_name]}
+        self.client.session.post(self.url, json=message)
